@@ -1,14 +1,16 @@
 *{
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
     user-select: none;
+    outline: none;
 }
 body{
     background: linear-gradient(#7a7171 30%, #3a3838);
     width: 100vw;
     height: 100vh;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     grid-template-rows: 1.5fr repeat(5, 1fr);
     gap: 4%;
     padding: 10px;
@@ -17,16 +19,15 @@ body{
     align-self: center;
     justify-self: end;
     margin-right: 20px;
+    grid-column: span 5;
 }
 .input{
-    grid-column: span 4;
     font-size: 48px;
-    color: #dddbdb;
+    color: #fff;
 }
 .output{
-    grid-column: 2 / span 3;
     font-size: 36px;
-    color: #dddbdb;
+    color: #fff;
 }
 .btn{
     border: none;
@@ -35,8 +36,8 @@ body{
     font-size: 20px;
     background: transparent;
     cursor: pointer;
-    width: 20vw;
-    height: 12vh;
+    width: 15vw;
+    height: 13vh;
 }
 .btn:active{
     background-color: #1f1d1d;
